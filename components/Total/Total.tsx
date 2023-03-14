@@ -10,7 +10,7 @@ interface TotalProps {
 }
 const Total: React.FC<TotalProps> = ({ label, arrowDirection }) => {
   return (
-    <div className={styles.total_wrapper}>
+    <div className={`container ${styles.total_wrapper}`}>
       <div className={styles.arrow} data-direction={arrowDirection}>
         {arrowDirection === "up" ? <ImArrowUpRight2 /> : <ImArrowDownLeft2 />}
       </div>

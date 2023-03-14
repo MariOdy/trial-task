@@ -5,6 +5,7 @@ import styles from "./styles.module.scss";
 import "@/styles/reset.css";
 import "@/styles/styles.css";
 import "@/styles/colors.css";
+import "@/styles/container.css";
 
 const Home = () => {
   return (

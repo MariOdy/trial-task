@@ -1,0 +1,49 @@
+.transaction_wrapper {
+  padding: 24px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  & h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: white;
+  }
+}
+.transactions_table {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  & tr {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: left;
+
+    font-weight: 400;
+    font-size: 13.8711px;
+    line-height: 19px;
+    color: white;
+
+    & th {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: var(--font-transaction-regular);
+    }
+  }
+}
+.status {
+  padding: 4px 12px;
+  border-radius: 8px;
+  width: fit-content;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+
+  background: var(--green-bg);
+  color: var(--green);
+}

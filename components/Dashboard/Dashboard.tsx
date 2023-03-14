@@ -1,24 +1,19 @@
 import React from "react";
 import Total from "../Total";
-import getTransactions from "./getTransactions";
+import Transaction from "../Transaction";
 import styles from "./styles.module.scss";
-interface Transaction {
-  id: string;
-  date: string;
-  amount: string;
-  currency: string;
-  category: string;
-  creditorName: string;
-}
 
-const Dashboard = async () => {
-  const { transactions } = await getTransactions();
+const Dashboard = () => {
   return (
     <div className={styles.dashboard_wrapper}>
       <h1>Dashboard</h1>
       <div className={styles.dashboard_totals}>
         <Total label="Income" arrowDirection="down" />
         <Total label="Outcome" arrowDirection="up" />
+      </div>
+      <div className={styles.transactionn_analytics}>
+        {/* @ts-expect-error Server Component */}
+        <Transaction />
       </div>
     </div>
   );

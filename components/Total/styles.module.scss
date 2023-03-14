@@ -1,6 +1,4 @@
 .total_wrapper {
-  background-color: var(--dark-blue-bg);
-  border-radius: 20px;
   padding: 40px 24px;
 
   display: flex;
@@ -41,7 +39,7 @@
   color: var(--font-regular);
 
   & h3 {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 24px;
     color: white;
   }
