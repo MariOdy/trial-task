@@ -1,0 +1,65 @@
+.total_wrapper {
+  background-color: var(--dark-blue-bg);
+  border-radius: 20px;
+  padding: 40px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.arrow {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & svg {
+    color: white;
+  }
+}
+.arrow[data-direction="up"] {
+  background-color: var(--diagram-income);
+}
+.arrow[data-direction="down"] {
+  background-color: var(--diagram-outcome);
+}
+
+.total_data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4px;
+  margin-right: 16px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--font-regular);
+
+  & h3 {
+    font-weight: 600;
+    font-size: 24px;
+    color: white;
+  }
+}
+
+.percentage {
+  padding: 4px 12px;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  align-self: flex-end;
+}
+.percentage[data-direction="up"] {
+  background: var(--red-bg);
+  color: var(--red);
+}
+.percentage[data-direction="down"] {
+  background: var(--green-bg);
+  color: var(--green);
+}
