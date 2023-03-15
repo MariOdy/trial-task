@@ -4,13 +4,14 @@
 
   --diagram-outcome: #64cff6;
   --diagram-income: #6359e9;
-  --hover-message: #464687;
+  --diagram-grid: rgba(140, 137, 180, 0.5);
 
   --green: #02b15a;
   --green-bg: rgba(2, 177, 90, 0.15);
   --red: #e41414;
   --red-bg: rgba(235, 0, 27, 0.15);
   --dark-blue-bg: #1d1d41;
+  --dark-blue-bg-hover: #171734;
   --dark-blue-input: #27264e;
   --main-bg: #f1f1f1;
 }

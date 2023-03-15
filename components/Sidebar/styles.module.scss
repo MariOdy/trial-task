@@ -26,3 +26,10 @@
     height: auto;
   }
 }
+@media (max-width: 770px) {
+  .sidebar_wrapper {
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}

@@ -1,12 +1,39 @@
+.totals {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+
+  @media (max-width: 770px) {
+    flex-direction: column;
+  }
+}
+
 .total_wrapper {
   padding: 24px;
-
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
+
+  &[data-type="Income"] {
+    --arrow-bg: var(--diagram-income);
+    --percentage-bg: var(--green-bg);
+    --percentage-text: var(--green);
+  }
+  &[data-type="Outcome"] {
+    --arrow-bg: var(--diagram-outcome);
+    --percentage-bg: var(--red-bg);
+    --percentage-text: var(--red);
+  }
+
+  @media (max-width: 770px) {
+    justify-content: space-evenly;
+  }
 }
+
 .arrow {
+  background-color: var(--arrow-bg);
+
   width: 45px;
   height: 45px;
   border-radius: 10px;
@@ -14,16 +41,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  & svg {
-    color: white;
-  }
-}
-.arrow[data-direction="up"] {
-  background-color: var(--diagram-income);
-}
-.arrow[data-direction="down"] {
-  background-color: var(--diagram-outcome);
+  color: white;
 }
 
 .total_data {
@@ -45,18 +63,13 @@
 }
 
 .percentage {
+  background: var(--percentage-bg);
+  color: var(--percentage-text);
+
   padding: 4px 12px;
   border-radius: 10px;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   align-self: flex-end;
-}
-.percentage[data-direction="up"] {
-  background: var(--red-bg);
-  color: var(--red);
-}
-.percentage[data-direction="down"] {
-  background: var(--green-bg);
-  color: var(--green);
 }

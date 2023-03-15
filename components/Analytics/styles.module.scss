@@ -3,11 +3,76 @@
 
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 40px;
+
   & h2 {
     font-weight: 600;
     font-size: 24px;
     line-height: 28px;
     color: white;
+  }
+
+  & :global(.recharts_wrapper) {
+    width: 100%;
+    height: auto;
+
+    & :global(.recharts-cartesian-grid) {
+      & line {
+        stroke: var(--diagram-grid);
+      }
+    }
+  }
+}
+.analytics_header {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 40px;
+
+  & > * {
+    flex: 1 1;
+  }
+
+  @media (max-width: 770px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  & input {
+    border: 1px solid var(--diagram-grid);
+    border-radius: 8px;
+    background-color: inherit;
+    max-width: 80px;
+    padding: 4px 12px;
+    justify-self: right;
+  }
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  & div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &::before {
+      border-radius: 50%;
+      content: "";
+      display: block;
+      height: 12px;
+      width: 12px;
+    }
+    &[data-type="Income"]::before {
+      background: #6359e9;
+    }
+    &[data-type="Outcome"]::before {
+      background: #64cff6;
+    }
   }
 }

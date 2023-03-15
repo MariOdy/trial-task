@@ -1,4 +1,8 @@
 .container {
   background-color: var(--dark-blue-bg);
   border-radius: 20px;
+  transition-property: background;
+}
+.container:hover {
+  background-color: var(--dark-blue-bg-hover);
 }

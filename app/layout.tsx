@@ -1,16 +1,19 @@
 import Sidebar from "@/components/Sidebar";
 import localFont from "next/font/local";
 
-import styles from "./styles.module.scss";
 import "@/styles/reset.css";
 import "@/styles/styles.css";
 import "@/styles/colors.css";
 import "@/styles/container.css";
 
+import styles from "./styles.module.scss";
+
 export const metadata = {
   title: "Trial Task",
   description: "Trial task for icreas.io",
+  icons: "/inc-icon.png",
 };
+
 const generalSans = localFont({
   src: [
     {

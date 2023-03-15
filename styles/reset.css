@@ -49,6 +49,7 @@ a {
   cursor: pointer;
   text-decoration: none;
   color: currentColor;
+  --rs-text-link: currentColor;
   border: none;
   border-radius: none;
   appearance: none;
