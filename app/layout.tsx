@@ -1,4 +1,11 @@
+import Sidebar from "@/components/Sidebar";
 import localFont from "next/font/local";
+
+import styles from "./styles.module.scss";
+import "@/styles/reset.css";
+import "@/styles/styles.css";
+import "@/styles/colors.css";
+import "@/styles/container.css";
 
 export const metadata = {
   title: "Trial Task",
@@ -48,7 +55,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={generalSans.variable}>
-      <body>{children}</body>
+      <body className={styles.main_page}>
+        <Sidebar />
+        {children}
+      </body>
     </html>
   );
 }

@@ -1,4 +1,27 @@
 .main_page {
-  background-color: var(--main-bg);
   display: flex;
+}
+
+.dashboard_wrapper {
+  padding: 24px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  & h1 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+}
+.dashboard_totals {
+  width: fit-content;
+  display: flex;
+  gap: 24px;
+}
+.transactionn_analytics {
+  display: flex;
+  gap: 32px;
+  border: 1px solid red;
 }
