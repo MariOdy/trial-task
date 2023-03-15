@@ -8,6 +8,8 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
+import "rsuite/dist/rsuite.css";
+
 import type { MonthData } from "./useChart";
 
 interface ChartProps {
